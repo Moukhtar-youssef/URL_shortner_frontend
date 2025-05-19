@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
+import URLSubmitter from '../components/UrlSubmitter'
 
 const Home = () => {
     return (
-        <div>
-            <h1>🏠 Home Page</h1>
+        <div className='w-full flex flex-col items-center justify-center min-h-screen '>
+            <h1 >🏠 Home Page</h1>
             <p>Welcome to your URL shortener frontend!</p>
-            <Link to="/about">Go to About</Link>
+            <URLSubmitter />
+            {/* <Link to="/about">Go to About</Link> */}
         </div>
     )
 }
